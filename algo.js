@@ -30,6 +30,7 @@ function narcissistic(value) {
     return false;
   }
 
-  console.log(narcissistic(7));
-  console.log(narcissistic(153));
+  console.log("Testing 7:",narcissistic(7));
+  console.log("Testing 153:",narcissistic(153));
+  console.log("Testing 371:",narcissistic(371));
   
