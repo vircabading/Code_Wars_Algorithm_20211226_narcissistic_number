@@ -21,11 +21,13 @@ function narcissistic(value) {
     //  iterate through each character of valueString
     for (let idx=0; idx < power; idx++) {
       let num = Math.pow(parseInt(valueString[idx]), power);
-      console.log("num:", num); 
       sum += num;
-      console.log("sum:", sum);
     }
-
+    console.log("sum:", sum);
+    if (sum === value) {
+      return true;
+    }
+    return false;
   }
 
-  narcissistic(153);
+  console.log(narcissistic(153));
