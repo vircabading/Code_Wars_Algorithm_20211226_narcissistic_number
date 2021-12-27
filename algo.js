@@ -12,23 +12,23 @@
  */
 
 function narcissistic(value) {
-    //  Convert value to a string
-    let valueString = value.toString();
-    let sum = 0;
-    let power = valueString.length;
+  //  Convert value to a string
+  let valueString = value.toString();
+  let sum = 0;
+  let power = valueString.length;
 
-    //  iterate through each character of valueString
-    for (let idx=0; idx < power; idx++) {
-      let num = Math.pow(parseInt(valueString[idx]), power);
-      sum += num;
-    }
-
-    // Determine if value is a narcissistic number54,
-    if (sum === value) {
-      return true;
-    }
-    return false;
+  //  iterate through each character of valueString
+  for (let idx=0; idx < power; idx++) {
+    let num = Math.pow(parseInt(valueString[idx]), power);
+    sum += num;
   }
+
+  // Determine if value is a narcissistic number54,
+  if (sum === value) {
+    return true;
+  }
+  return false;
+}
 
   console.log("Testing 7:",narcissistic(7));
   console.log("Testing 153:",narcissistic(153));
