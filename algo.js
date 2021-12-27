@@ -16,14 +16,14 @@ function narcissistic(value) {
     let valueString = value.toString();
     let sum = 0;
     let power = valueString.length;
-    console.log("power:",power)
 
     //  iterate through each character of valueString
     for (let idx=0; idx < power; idx++) {
       let num = Math.pow(parseInt(valueString[idx]), power);
       sum += num;
     }
-    console.log("sum:", sum);
+
+    // Determine if value is a narcissistic number
     if (sum === value) {
       return true;
     }
@@ -33,4 +33,6 @@ function narcissistic(value) {
   console.log("Testing 7:",narcissistic(7));
   console.log("Testing 153:",narcissistic(153));
   console.log("Testing 371:",narcissistic(371));
-  
+  console.log("Testing 8:",narcissistic(8));
+  console.log("Testing 154:",narcissistic(154));
+  console.log("Testing 372:",narcissistic(372));
