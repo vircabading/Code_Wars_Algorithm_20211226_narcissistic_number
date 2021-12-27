@@ -13,7 +13,9 @@
 
 function narcissistic(value) {
     let valueString = value.toString();
-    console.log("valueString:", valueString);
+    for (let idx=0; idx < valueString.length; idx++) {
+      console.log(idx);
+    }
   }
 
   narcissistic(15);
