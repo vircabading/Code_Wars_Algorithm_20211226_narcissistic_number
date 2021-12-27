@@ -23,7 +23,7 @@ function narcissistic(value) {
       sum += num;
     }
 
-    // Determine if value is a narcissistic number
+    // Determine if value is a narcissistic number54,
     if (sum === value) {
       return true;
     }
