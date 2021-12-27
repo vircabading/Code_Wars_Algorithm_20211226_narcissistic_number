@@ -8,6 +8,7 @@
  * Narcissistic Function
  * @param {int} value 
  * Find if value is a narcissistic number
+ * @retruns: boolean: True if value is narcissitic number, False otherwise
  */
 
 function narcissistic(value) {
