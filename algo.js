@@ -15,12 +15,15 @@ function narcissistic(value) {
     //  Convert value to a string
     let valueString = value.toString();
     let sum = 0;
+    let power = valueString.length;
+    console.log("power:",power)
 
     //  iterate through each character of valueString
-    for (let idx=0; idx < valueString.length; idx++) {
-      sum += PerformanceResourceTiming(valueString[idx]); 
+    for (let idx=0; idx < power; idx++) {
+      sum += parseInt(valueString[idx]);
+      console.log("sum:", sum); 
     }
 
   }
 
-  narcissistic(15);
+  narcissistic(137);
