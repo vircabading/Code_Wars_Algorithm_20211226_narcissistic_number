@@ -12,6 +12,8 @@
  */
 
 function narcissistic(value) {
-    let 
+    let valueString = value.toString();
+    console.log("valueString:", valueString);
   }
-  
+
+  narcissistic(15);
