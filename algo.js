@@ -14,7 +14,7 @@
 function narcissistic(value) {
     let valueString = value.toString();
     for (let idx=0; idx < valueString.length; idx++) {
-      console.log(idx);
+      console.log(valueString[idx]);
     }
   }
 
